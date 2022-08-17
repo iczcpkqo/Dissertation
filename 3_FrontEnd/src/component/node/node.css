@@ -1,0 +1,410 @@
+/*movie*/
+.v1 .basenode {
+    /*border: solid 1px #f00;*/
+    display: inline-block;
+}
+
+.v1 .node{
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.v1 .exploration .node{
+    /*cursor: pointer;*/
+}
+
+.v1 .node.nav {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.v1 .node .n-type,
+.v1 .node .n-obj {
+    border: solid 1px var(--v1-base-gray);
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 20px 0 20px;
+}
+
+.v1 .node .n-type{
+    border-radius: 5px 0 0 5px;
+    background-color: var(--v1-base-gray);
+    border-color: var(--v1-base-gray);
+    color: var(--v1-base-white);
+}
+
+.v1 .node .n-obj {
+    border-radius: 0 5px 5px 0;
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-base-gray);
+    color: var(--v1-base-gray);
+}
+
+
+.v1 .n-movie .node{
+
+}
+
+/*.node .n-movie .n-pre{ }*/
+/*.node .n-movie .n-pre .n-con{ }*/
+/*.node .n-movie .n-pre .n-con .con-txt{ }*/
+/*.node .n-movie .n-pre .n-con .con-line{ }*/
+
+.v1 .n-movie .node .n-type{
+    background-color: var(--v1-movie-a1);
+    border-color: var(--v1-movie-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-movie .node.n-type .n-con{
+}
+
+.v1 .n-movie .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-movie-a1);
+    color: var(--v1-movie-a1);
+}
+
+.v1 .n-movie .node .n-obj .n-con{
+
+}
+
+
+/*rating*/
+.v1 .n-rating .node{
+
+}
+
+/*.n-rating .node .n-pre{ } */
+/*.n-rating .node .n-pre .n-con{ }*/
+/*.n-rating .node .n-pre .n-con .con-txt{ }*/
+/*.n-rating .node .n-pre .n-con .con-line{ }*/
+
+.v1 .n-rating .node .n-type{
+    background-color: var(--v1-rating-a1);
+    border-color: var(--v1-rating-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-rating .node .n-type .n-con{
+
+}
+
+.v1 .n-rating .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-rating-a1);
+    color: var(--v1-rating-a1);
+}
+
+.v1 .n-rating .node .n-obj .n-con{
+
+}
+
+
+/*genre*/
+.v1 .n-genre .node{
+
+}
+
+/*.n-genre .node .n-pre{ } */
+/*.n-genre .node .n-pre .n-con{ } */
+/*.n-genre .node .n-pre .n-con .con-txt{ } */
+/*.n-genre .node .n-pre .n-con .con-line{ }*/
+
+.v1 .n-genre .node .n-type{
+    background-color: var(--v1-genre-a1);
+    border-color: var(--v1-genre-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-genre .node .n-type .n-con{
+}
+
+.v1 .n-genre .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-genre-a1);
+    color: var(--v1-genre-a1);
+}
+
+.v1 .n-genre .node .n-obj .n-con{
+
+}
+
+
+/*time*/
+.v1 .n-time .node{
+
+}
+
+/*.n-time .node .n-pre{ }*/
+/*.n-time .node .n-pre .n-con{ } */
+/*.n-time .node .n-pre .n-con .con-txt{ } */
+/*.n-time .node .n-pre .n-con .con-line{ } */
+
+.v1 .n-time .node .n-type{
+    background-color: var(--v1-time-a1);
+    border-color: var(--v1-time-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-time .node .n-type .n-con{
+}
+
+.v1 .n-time .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-time-a1);
+    color: var(--v1-time-a1);
+}
+
+.v1 .n-time .node .n-obj .n-con{
+
+}
+
+
+/*person*/
+.v1 .n-person .node{
+
+}
+
+/*.n-person .node .n-pre{ } */
+/*.n-person .node .n-pre .n-con{ } */
+/*.n-person .node .n-pre .n-con .con-txt{ } */
+/*.n-person .node .n-pre .n-con .con-line{ } */
+
+.v1 .n-person .node .n-type{
+    background-color: var(--v1-person-a1);
+    border-color: var(--v1-person-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-person .node .n-type .n-con{
+
+}
+
+.v1 .n-person .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-person-a1);
+    color: var(--v1-person-a1);
+
+}
+
+.v1 .n-person .node .n-obj .n-con{
+
+}
+
+
+/*company*/
+.v1 .n-company .node{
+
+}
+
+/*.n-company .node .n-pre{ } */
+/*.n-company .node .n-pre .n-con{ } */
+/*.n-company .node .n-pre .n-con .con-txt{ } */
+/*.n-company .node .n-pre .n-con .con-line{ } */
+
+.v1 .n-company .node .n-type{
+    background-color: var(--v1-company-a1);
+    border-color: var(--v1-company-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-company .node .n-type .n-con{
+
+}
+
+.v1 .n-company .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-company-a1);
+    color: var(--v1-company-a1);
+}
+
+.v1 .n-company .node .n-obj .n-con{
+
+}
+
+
+/*country*/
+.v1 .n-country .node{
+
+}
+
+/*.n-country .node .n-pre{ } */
+/*.n-country .node .n-pre .n-con{ } */
+/*.n-country .node .n-pre .n-con .con-txt{ } */
+/*.n-country .node .n-pre .n-con .con-line{ }*/
+
+.v1 .n-country .node .n-type{
+    background-color: var(--v1-country-a1);
+    border-color: var(--v1-country-a1);
+    color: var(--v1-base-white);
+}
+
+.v1 .n-country .node .n-type .n-con{
+
+}
+
+.v1 .n-country .node .n-obj{
+    background-color: var(--v1-base-white);
+    border-color: var(--v1-country-a1);
+    color: var(--v1-country-a1);
+}
+
+.v1 .n-country .node .n-obj .n-con{
+
+}
+
+
+/*Predicate*/
+.v1 .node .n-predicate {
+    display: inline-block;
+}
+
+.v1 .node .n-predicate .n-con{
+    position: relative;
+}
+
+.v1 .node .n-predicate .n-con .con-txt{
+    border-bottom: solid 2px var(--v1-base-gray);
+    border-left: solid 2px var(--v1-base-gray);
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    height: 10px;
+    line-height: 20px;
+}
+.v1 .node .n-predicate .n-con .con-txt label{
+    position: relative;
+    top: -15px;
+}
+
+.v1 .node .n-predicate .n-con .con-arr{
+    border-style: solid;
+    border-width: 8px 0 8px 15px;
+    border-color: rgba(0,0,0,0);
+    border-left-color: var(--v1-base-gray);
+    bottom: -1px;
+    display: inline-block;
+    height: 0;
+    position: relative;
+    width: 0;
+    /*border-width: 10px 0 10px 10px;*/
+    /*border-left-color: #0b0b0d;*/
+    /*content: "";*/
+    /*border: solid 1px #44ff00;*/
+    /*display: inline-block;*/
+    /*height: 10px;*/
+    /*width: 10px;*/
+}
+
+.v1 .node .exploration-box {
+    display: none;
+}
+
+.v1 .exploration .exploration-box {
+    background-color: rgba(0, 0, 0, 0.01);
+    display: none;
+    float: right;
+    padding: 0 10px;
+    border: solid 1px #f00;
+    position: relative;
+}
+.v1 .exploration:hover .exploration-box {
+    display: block;
+}
+
+.v1 .exploration .exploration-box .n-predicate {
+    position: absolute;
+    /*width: 100px;*/
+
+}
+
+.v1 .exploration .exploration-box .n-predicate .n-con{
+    clear: both;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.01);
+    cursor: pointer;
+    margin-bottom: 10px;
+    /*border: solid 1px #f00;*/
+    padding-right: 13px;
+
+    position: static;
+    top: 0;
+}
+
+.v1 .exploration .exploration-box .n-predicate .n-con .con-txt{
+    border-bottom: solid 2px var(--v1-base-gray);
+    display: inline-block;
+    float: left;
+    padding: 0 10px 0 10px;
+
+}
+
+.v1 .exploration .exploration-box .n-predicate .n-con .con-arr{
+
+    border-style: solid;
+    border-width: 8px 0 8px 15px;
+    border-color: rgba(0,0,0,0);
+    border-left-color: var(--v1-base-gray);
+    display: inline-block;
+    float: right;
+
+    bottom: 9px;
+    right: -15px;
+    height: 0;
+    position: relative;
+    width: 0;
+}
+
+/* Operation */
+.v1 .operation{
+    position: relative;
+}
+
+.v1 .node .operation-box{
+    display: none;
+}
+.v1 .operation .operation-box{
+    /*background-color: rgba(0, 0, 0, 0.01);*/
+    /*border: solid 1px #f00;*/
+    cursor: pointer;
+    display: none;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+}
+
+.v1 .operation:hover .operation-box{
+    /*display: inline-block;*/
+    display: inline-block;
+}
+
+.v1 .operation .operation-box .n-oper{
+    padding: 0 10px;
+    width: 400px;
+    /*border: solid 1px #f0f;*/
+    /*background-color: rgba(0,0,0,0.5);*/
+}
+
+.v1 .operation .operation-box .n-oper .oper{
+    border: solid 1px var(--v1-base-gray);
+    border-radius: 5px;
+    /*display: inline-block;*/
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+.v1 .operation .operation-box .n-oper .oper .ico{
+    float: left;
+}
+
+.v1 .operation .operation-box .n-oper .oper .op-name{
+    float: left;
+}
+
+
+
+
+

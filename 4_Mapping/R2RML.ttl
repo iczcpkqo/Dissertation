@@ -1,0 +1,338 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix xmd: <http://www.example.org/xiangmao/ont#> .
+
+
+<#Movie>
+        a rr:TriplesMap ;
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/movie/{ID}" ;
+                rr:class xmd:Movie;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "NAME" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:year;
+                rr:objectMap [
+                        rdfs:label "hahahehe";
+                        rr:column "YEAR" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:released;
+                rr:objectMap [
+                        rr:column "RELEASED" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:score;
+                rr:objectMap [
+                        rr:column "SCORE" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:budget;
+                rr:objectMap [
+                        rr:column "BUDGET" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:gross;
+                rr:objectMap [
+                        rr:column "GROSS" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:runtime;
+                rr:objectMap [
+                        rr:column "RUNTIME" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:rating;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/rating/{RATING}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:genre;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/genre/{GENRE}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:time;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/time/{TIME}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:directedBy;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/person/{DIRECTORID}"
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:writtenBy;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/person/{WRITERID}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:actedBy;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/person/{STARID}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:company;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/company/{COMPANYID}" 
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:country;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/country/{COUNTRYID}" 
+                ];
+        ];
+.
+
+
+<#Rating>
+        a rr:TriplesMap ;
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/rating/{RATING}" ;
+                rr:class xmd:Rating;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "RATING" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:ratingOf;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Genre>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/genre/{GENRE}" ;
+                rr:class xmd:Genre;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "GENRE" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:genreOf;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Time>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/time/{TIME}";
+                rr:class xmd:Time;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "TIME" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:timeOf;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Director>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/person/{DIRECTORID}";
+                rr:class xmd:Person;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "DIRECTOR" ;
+                        rr:datatype xsd:string ;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:direct;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Writer>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/person/{WRITERID}";
+                rr:class xmd:Person;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "WRITER";
+                        rr:datatype xsd:string;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:write;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Actor>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/person/{STARID}";
+                rr:class xmd:Person;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "STAR";
+                        rr:datatype xsd:string;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:act;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Company>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/company/{COMPANYID}";
+                rr:class xmd:Company;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "COMPANY";
+                        rr:datatype xsd:string;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:invest;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+
+<#Country>
+        a rr:TriplesMap ;
+
+        rr:logicalTable [ rr:tableName "MOVIES" ] ;
+
+        rr:subjectMap [
+                rr:template "http://www.example.org/xiangmao/data/country/{COUNTRYID}";
+                rr:class xmd:Country;
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:name;
+                rr:objectMap [
+                        rr:column "COUNTRY";
+                        rr:datatype xsd:string;
+                ];
+        ];
+
+        rr:predicateObjectMap [
+                rr:predicate xmd:countryOf;
+                rr:objectMap [ 
+                        rr:template "http://www.example.org/xiangmao/data/movie/{ID}" 
+                ];
+        ];
+.
+

@@ -1,0 +1,43 @@
+.v1 {
+    --v1-base-gray: #333;
+    --v1-base-white: #fff;
+    --v1-base-black: #000;
+
+    --v1-movie-a1: #336699;
+    --v1-rating-a1: #cc5800;
+    --v1-genre-a1: #ffae00;
+    /*--v1-genre-a1: #f00;*/
+
+    --v1-time-a1: #2b9900;
+    --v1-person-a1: #00ccbb;
+    --v1-company-a1: #a333ff;
+
+    --v1-country-a1: #ff667d;
+
+    /*rgba(0, 0, 0, 0.16)*/
+    /*box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.16);*/
+    /*text*/
+    --v1-input-a1: #999;
+    /*border*/
+    --v1-input-a2: #e6e7ea;
+    /*background-color*/
+    --v1-input-a3: #fff;
+
+    --v1-input-a4: rgba(0, 0, 0, 0.16);
+
+    /*text*/
+    --v1-btn-a1: #333;
+    /*333333*/
+
+    /*border*/
+    --v1-btn-a2: #e6e7ea;
+
+    /*fill*/
+    --v1-btn-a3: #f8f9fa;
+    /*#f8f9fa*/
+
+    /*text*/
+    /*blur*/
+    /*rgba(0, 0, 0, 0.16)*/
+    --v1-btn-a4: rgba(0, 0, 0, 0.16);
+}

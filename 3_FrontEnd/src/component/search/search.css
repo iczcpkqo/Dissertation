@@ -1,0 +1,101 @@
+.v1 .search{
+
+}
+
+.v1 .search.fold{
+    display: none;
+}
+
+.v1 .search .search-con{
+
+}
+
+.v1 .search .search-con .con-text{
+
+}
+
+.v1 .search .search-con .con-text .con-input {
+    display: inline-block;
+}
+
+.v1 .search .search-con .con-text .con-input .ctr-input{
+
+}
+
+.v1 .search .search-con .con-text .con-input .ctr-input input[type="text"]{
+    background-color: var(--v1-input-a3);
+    border: solid 1px var(--v1-input-a2);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 var(--v1-input-a4);
+    color: var(--v1-input-a1);
+    font-size: 18px;
+    height: 40px;
+    line-height: 18px;
+    padding: 0 20px 0 20px;
+    width: 400px;
+}
+.v1 .search .search-con .con-text .con-input .ctr-input input[type="text"]:focus{
+    color: var(--v1-base-black);
+}
+
+.v1 .search .search-con .con-text .con-btn {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.v1 .search .search-con .con-text .con-btn .ctr-btn{
+
+}
+
+.v1 .search .search-con .con-text .con-btn .ctr-btn input[type="button"]{
+    background-color: var(--v1-btn-a3);
+    border: solid 1px var(--v1-btn-a2);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 var(--v1-btn-a4);
+    color: var(--v1-btn-a1);
+    cursor: pointer;
+    height: 40px;
+    padding: 0;
+    width: 200px;
+}
+.v1 .search .search-con .con-text .con-btn .ctr-btn .btn-fold{
+    margin-left: 20px;
+}
+
+.v1 .search .search-con .con-filter {
+    margin-top: 20px;
+}
+
+.v1 .search .search-con .con-filter .ctr-filter{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.v1 .search .search-con .con-filter label{
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

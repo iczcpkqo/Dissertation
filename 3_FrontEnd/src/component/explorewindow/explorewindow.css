@@ -1,0 +1,97 @@
+/*movie*/
+.v1 .explore-window {
+    /*border: solid 1px #f00;*/
+    border: solid 1px var(--v1-base-gray);
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    /*right: 0px;*/
+    z-index: 10000;
+}
+
+.v1 .explore-arr{
+    left: -30px;
+    position: relative;
+    top: -45px;
+}
+
+.v1 .explore-arr .border-left-empty{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid var(--v1-base-gray);
+    border-top: 30px solid transparent;
+    position: absolute;
+    margin: 50px auto;
+}
+
+.v1 .explore-arr .border-left-empty span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 29px solid transparent;
+    border-right: 29px solid var(--v1-input-a2);
+    border-top: 29px solid transparent;
+    position: absolute;
+    left: 1px;
+    top: -29px;
+}
+
+/*.v1 .explore-window {*/
+/*    content: "";*/
+/*    border-style: solid;*/
+/*    border-width: 8px 0 8px 15px;*/
+/*    border-color: rgba(0,0,0,0);*/
+/*    border-left-color: var(--v1-base-gray);*/
+/*    bottom: -1px;*/
+/*    display: inline-block;*/
+/*    height: 0;*/
+/*    position: relative;*/
+/*    width: 0;*/
+/*}*/
+
+.v1 .explore-window {
+    margin-left: 50px;
+}
+
+.v1 .explore-window .con-explore-window {
+    /*border: solid 1px #f00;*/
+    /*background-color: rgba(51, 51, 51, 0.2);*/
+    background-color: var(--v1-input-a2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.v1 .con-explore-window {
+
+}
+
+.v1 .con-explore-window .node-navigation {
+    min-height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+}
+
+.v1 .con-explore-window .node-navigation .con-node-navigation{
+    background-color: rgba(51, 102, 153, 0.3);
+    margin: 10px;
+    padding: 0 20px 20px 20px;
+    /*width: 1500px;*/
+    width: auto;
+}
+.v1 .con-explore-window .node-navigation .con-node-navigation .cell-nav {
+    display: inline-block;
+}
+
+
+.v1 .con-explore-window .explore-list {
+
+}
+
+.v1 .con-explore-window .explore-list .con-explore-list{
+    margin: 10px;
+}
+
+/* Modify the Node */

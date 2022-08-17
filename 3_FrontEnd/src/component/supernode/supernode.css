@@ -1,0 +1,40 @@
+.v1 .node-supernode{}
+.v1 .node-supernode .con-node-supernode{}
+.v1 .node-supernode .con-node-supernode.show{}
+.v1 .node-supernode .con-node-supernode{}
+
+.v1 .node-supernode .bar-supernode{
+    display: inline-block;
+    border: solid 1px var(--v1-input-a1);
+    border-radius: 5px;
+    cursor: pointer;
+    /*color: var(--v1-base-gray)*/
+    color: var(--v1-input-a1);
+    margin: 20px 0 0 20px;
+    padding: 10px 20px;
+    /*color: var(va)*/
+}
+.v1 .node-supernode .bar-supernode:hover{
+    background-color: var(--v1-input-a2);
+}
+.v1 .node-supernode .con-node-supernode .bar-supernode .btn-show-supernode{
+    display: none;
+}
+.v1 .node-supernode .con-node-supernode .bar-supernode .btn-hidden-supernode{
+    display: block;
+}
+.v1 .node-supernode .con-node-supernode.show .bar-supernode .btn-show-supernode{
+    display: block;
+}
+.v1 .node-supernode .con-node-supernode.show .bar-supernode .btn-hidden-supernode{
+    display: none;
+}
+.v1 .node-supernode .btn-show-supernode{}
+.v1 .node-supernode .btn-hidden-supernode{}
+
+.v1 .node-supernode .con-node-supernode .box-supernode-children {
+    display: none;
+}
+.v1 .node-supernode .con-node-supernode.show .box-supernode-children {
+   display: block;
+}
