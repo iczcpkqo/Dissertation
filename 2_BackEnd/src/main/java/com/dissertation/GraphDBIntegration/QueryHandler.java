@@ -17,7 +17,8 @@ public class QueryHandler {
 
     public ArrayList<HashMap<String,String>> executeQuery(String queryID, Map<String,String> params) throws Exception {
         ArrayList<HashMap<String,String>> result = new ArrayList<>();
-        HTTPRepository repository = new HTTPRepository("http://SmurfsPC:7200/repositories/dev_22072805");
+//        HTTPRepository repository = new HTTPRepository("http://localhost:7200//repositories/dev_22072805");
+        HTTPRepository repository = new HTTPRepository("http://DESKTOP-9PNRKKI:7200/repositories/test1");
 
         RepositoryConnection connection = (RepositoryConnection) repository.getConnection();
         try {

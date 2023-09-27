@@ -49,7 +49,9 @@ public class ServerHandler {
                 if(params != null){
                     String queryNumber  = params.get("queryID").toString();
                     result = new QueryHandler().executeQuery(queryNumber,params);
-                    Set<String> columns = result.get(0).keySet();
+                    System.out.println("=== Result: ======");
+                    System.out.println(result);
+//                    Set<String> columns = result.get(0).keySet();
                     int rowCount = 0;
                     for(HashMap<String, String> row : result){
                         System.out.println("-------------------------------");
