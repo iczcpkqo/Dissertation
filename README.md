@@ -19,3 +19,12 @@ Done
 4. `R2RML.ttl`: This is R2RML File, You can Convert(Uplift) `movies.csv` to `GraphDB_DATA.ttl` by this file.
 
 5. `Optimize the interaction by knowledge graph.mp4`: A video of my demonstration
+
+### Front-End
+
+* Node.js 16.20.2
+
+### Back-End
+
+* Oracle OpenJDK 16+
+
